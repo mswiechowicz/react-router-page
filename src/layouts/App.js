@@ -1,5 +1,5 @@
 import React from 'react';
-import {BrowserRouter, Route} from 'react-router-dom';
+import {BrowserRouter} from 'react-router-dom';
 import '../styles/App.css';
 import Header from "./Header";
 import Navigation from "./Navigation";
@@ -10,7 +10,7 @@ class App extends React.Component
 {
     render() {
         return (
-            <BrowserRouter>
+            <BrowserRouter basename={process.env.PUBLIC_URL}>
                 <div className="App">
                     <header>
                         <Header />
