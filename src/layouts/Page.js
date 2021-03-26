@@ -6,6 +6,7 @@ import ContactPage from "../pages/ContactPage";
 import AdminPage from "../pages/AdminPage";
 import ErrorPage from "../pages/ErrorPage";
 import AppProvider from "../components/AppContext";
+import MobXPage from "../pages/MobXPage";
 
 class Page extends Component
 {
@@ -16,6 +17,7 @@ class Page extends Component
                     <Route path="/" exact component={HomePage}/>
                     <Route path="/products" component={ProductPage}/>
                     <Route path="/contact" component={ContactPage}/>
+                    <Route path="/mobx" component={MobXPage}/>
                     <Route path="/admin" component={AdminPage}/>
                     <Route component={ErrorPage}/>
                 </Switch>

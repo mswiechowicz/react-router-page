@@ -2,14 +2,17 @@ import React, {useContext} from 'react';
 import {Route} from 'react-router-dom';
 import {AppContext} from "../components/AppContext";
 
+export const buttonStyle = {
+    padding: 15,
+    margin: 15,
+    backgroundColor: "crimson",
+    color: "white",
+    border: "none"
+}
+
 const AdminPage = () => {
     const { counter, isLogged, toggleIsLogged } = useContext(AppContext)
-    const buttonStyle = {
-        padding: 15,
-        backgroundColor: "crimson",
-        color: "white",
-        border: "none"
-    }
+
 
     const buttonText = isLogged ? "Log out" :"Log in";
 

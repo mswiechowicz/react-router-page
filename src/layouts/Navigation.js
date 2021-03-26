@@ -6,6 +6,7 @@ const list = [
     {name: "start", path: "/", exact: true},
     {name: "products", path: "/products"},
     {name: "contact", path: "/contact"},
+    {name: "mobx", path: "/mobx"},
     {name: "admin panel", path: "/admin"},
 ]
 

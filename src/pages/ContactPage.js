@@ -1,14 +1,18 @@
-import React, {Component} from 'react';
+import React from 'react';
+import {Provider} from "react-redux";
+import store from "../redux/store/store";
+import RateForm from "../components/RateForm";
+import RateFormList from "../components/RateFormList";
 
-class ContactPage extends Component
-{
-    render() {
-        return (
-            <div>
-                Kontakt
-            </div>
-        );
-    }
+const ContactPage = () => {
+    return (
+        <Provider store={store}>
+            Miał być kontakt, ale jest ocena:
+            <RateForm />
+            <h4>List:</h4>
+            <RateFormList />
+        </Provider>
+    );
 }
 
 export default ContactPage;

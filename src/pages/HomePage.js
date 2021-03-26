@@ -7,7 +7,7 @@ const reducer = (state, action) => {
         case 'ADD':
             return state.concat(action.text);
         case 'REMOVE':
-            return state.filter(el=> state.indexOf(el) !== action.id);
+            return state.filter((el,index)=> index !== action.id);
         default:
             throw new Error('Oops something went wrong!')
     }
@@ -30,7 +30,6 @@ const HomePage = () => {
         <p key={index}>{el}
             <button onClick={() => dispatch({id: index, type: 'REMOVE'})}>delete</button>
         </p>));
-
     return (
         <div>
             {isLogged ? (<>Counter: {counter} <br/><button style={buttonStyle} onClick={changeCounterValue}> +1 </button> </>) : "Homepage" }

@@ -40,6 +40,26 @@ section.page {
     flex-grow: 1;
 }
 
+section.page p {
+    font-size: 18px;
+    padding: 5px;
+}
+
+section.page ul {
+    width: 50%;
+}
+
+section.page li {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    list-style: none;
+    border: 1px solid crimson;
+    margin: 15px;
+    padding: 15px;
+}
+
+
 footer {
     background-color: #1a1d22;
     color: #61dafb;
